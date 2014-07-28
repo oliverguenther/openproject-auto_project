@@ -1,4 +1,4 @@
-# ChiliProject Auto-Project Plugin
+# OpenProject Auto-Project Plugin
 
 This plugin creates a new top-level private project for new users.
 
