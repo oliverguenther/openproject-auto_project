@@ -1,0 +1,11 @@
+<h3>Plugin: AutoProject</h3>
+
+<p>
+  <label><%= l(:label_user_project_role_id) %></label>
+  <%=
+  	select_tag("settings[user_project_role_id]",
+	  	options_for_select(Role.find_all_givable.collect {|r| [r.name, r.id.to_s]}),
+		:blank => "--- #{l(:actionview_instancetag_blank_option)} ---"
+  	)
+  %>
+</p>
